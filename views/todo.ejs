@@ -4,9 +4,10 @@
 
     <title>Todo List</title>
     <script
-    src="https://code.jquery.com/jquery-1.12.4.js"
-    integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+    src="https://code.jquery.com/jquery-1.12.3.min.js"
+    integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ="
     crossorigin="anonymous"></script>    
+     
     <link rel="stylesheet" href="/assets/styles.css" type="text/css">
 </head>
 <body>
@@ -18,13 +19,14 @@
         </form>
         <ul>
             <% 
-            todos.push({item: "bla bla"});
-            console.log(todos);
-            for (var i =0; i < todos.length; i++) {
+            //todos.push({item: "bla bla"});
+            //console.log(todos.length);
+            for (var i = 0; i < todos.length; i++) {
                  %>
                 <li><%= todos[i].item %></li>
             <% } %>
         </ul>
     </div>
+    <script src="/assets/todo-list.js"></script> 
 </body>
 </html>
